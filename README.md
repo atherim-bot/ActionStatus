@@ -2,12 +2,22 @@
 
 ## Description
 
-Display current action status on the status info widget. E.g. Idle, fishing, collect (mining, woodcutting), eat, etc...
+Display current action status on the status info widget.
 
-## Known issues
+Handled scenarios:
+- Idle
+- Collect (Mining, Woodcutting, Gathering plants)
+- Fishing
+- Eat
+- Play Instrument
+- Rest
+- Sleep
+- Fighting
 
-- Doesn't display status properly when walking while holding mouse click. Only works for click go to tile
-- Does not distinguish mining from woodcutting from plant gathering
+Does not handle well:
+- Click and hold to walk, still shows as idle
+- Walk short distances like adjacent tiles
+- Distinguish Mining from Woodcutting actions, it's considered as Collect by the game
 
 ## Credit
 
